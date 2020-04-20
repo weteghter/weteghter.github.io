@@ -3,24 +3,19 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>如何在Python中用数据库创建一个表 | weteghter.blog</title>
+  <title>Category: python爬虫 | weteghter.blog</title>
 
   <!-- keywords -->
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Python中如何在数据库中创建一个表import pymysql #导入pymysql库 db = pymysql.connect(“localhost”, “root”, “root1069”, “test”) #（本地连接，账户，密码，数据库名） cursor = db.cursor() #使用cursor创建一个游标对象 SQL = “””CREATE TABLE income (  id">
-<meta name="keywords" content="文章">
-<meta property="og:type" content="article">
-<meta property="og:title" content="如何在Python中用数据库创建一个表">
-<meta property="og:url" content="http://yoursite.com/2020/04/19/Python中如何在数据库中创建一个表/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="weteghter.blog">
+<meta property="og:url" content="http://yoursite.com/categories/python爬虫/index.html">
 <meta property="og:site_name" content="weteghter.blog">
-<meta property="og:description" content="Python中如何在数据库中创建一个表import pymysql #导入pymysql库 db = pymysql.connect(“localhost”, “root”, “root1069”, “test”) #（本地连接，账户，密码，数据库名） cursor = db.cursor() #使用cursor创建一个游标对象 SQL = “””CREATE TABLE income (  id">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2020-04-19T15:44:50.081Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="如何在Python中用数据库创建一个表">
-<meta name="twitter:description" content="Python中如何在数据库中创建一个表import pymysql #导入pymysql库 db = pymysql.connect(“localhost”, “root”, “root1069”, “test”) #（本地连接，账户，密码，数据库名） cursor = db.cursor() #使用cursor创建一个游标对象 SQL = “””CREATE TABLE income (  id">
+<meta name="twitter:title" content="weteghter.blog">
   
     <link rel="alternative" href="/atom.xml" title="weteghter.blog" type="application/atom+xml">
   
@@ -168,110 +163,61 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-Python中如何在数据库中创建一个表" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap">
   
-    <div class="article-meta">
-      <a href="/2020/04/19/Python中如何在数据库中创建一个表/" class="article-date">
-  	<time datetime="2020-04-19T15:31:24.241Z" itemprop="datePublished">2020-04-19</time>
-</a>
-    </div>
   
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy">
     
     
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      如何在Python中用数据库创建一个表
       
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2020" class="archive-year">2020</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2020/04/20/Python爬虫进阶学习/" class="archive-article-date">
+  	<time datetime="2020-04-20T03:50:52.326Z" itemprop="datePublished">Apr 20</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2020/04/20/Python爬虫进阶学习/">
+        Python 爬虫进阶学习知识点
+        
+      </a>
     </h1>
   
 
-      </header>
-      
-      <div class="article-info article-info-post">
-        
+        <div class="article-info info-on-left">
+          
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/文章/">文章</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
 	</div>
 
-        
+          
 	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Python/">Python</a>
+	<a class="article-category-link" href="/categories/python爬虫/">python爬虫</a>
 	</div>
 
 
-        
+          
+        </div>
         <div class="clearfix"></div>
-      </div>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Python中如何在数据库中创建一个表"><a href="#Python中如何在数据库中创建一个表" class="headerlink" title="Python中如何在数据库中创建一个表"></a>Python中如何在数据库中创建一个表</h2><p>import pymysql</p>
-<p>#导入pymysql库</p>
-<p>db = pymysql.connect(“localhost”, “root”, “root1069”, “test”)</p>
-<p>#（本地连接，账户，密码，数据库名）</p>
-<p>cursor = db.cursor()</p>
-<p>#使用cursor创建一个游标对象</p>
-<p>SQL = “””CREATE TABLE <code>income</code> (<br>  <code>id</code> int(11) NOT NULL AUTO_INCREMENT,<br>  <code>datetime</code> varchar(20) DEFAULT NULL,<br>  <code>ironincome</code> decimal(20,2) DEFAULT NULL,<br>  <code>generalincome</code> decimal(20,2) DEFAULT NULL,<br>  <code>baiincome</code> decimal(20,2) DEFAULT NULL,<br>  PRIMARY KEY (<code>id</code>)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;<br>“””</p>
-<p>#使用sql语句</p>
-<p>cursor.execute(SQL)</p>
-<p>#执行sql语句</p>
-<p>db.close()</p>
-<p>#关闭数据库</p>
-
-      
-    </div>
-    
+    </header>
   </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2020/04/20/Python爬虫进阶学习/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">&lt;</strong>
-      <div class="article-nav-title">
-        
-          Python 爬虫进阶学习知识点
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2019/06/16/first/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">first</div>
-      <strong class="article-nav-caption">&gt;</strong>
-    </a>
-  
-</nav>
-
-  
 </article>
+  
+  
+    </div></section>
+  
 
-
-<div class="ds-share share" data-thread-key="Python中如何在数据库中创建一个表" data-title="如何在Python中用数据库创建一个表" data-url="http://yoursite.com/2020/04/19/Python中如何在数据库中创建一个表/" data-images="https://www.z4a.net/images/2019/06/16/Cg-4y1TJmCGIZG0wAAjVpQH5lSAAATOAAMq9eoACNW9816.jpg" data-content="如何在Python中用数据库创建一个表">
-    <div class="ds-share-inline">
-      <ul class="ds-share-icons-16">
-      	<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
-        <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
-        <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
-        <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
-        <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
-      </ul>
-      <div class="ds-share-icons-more">
-      </div>
-    </div>
- </div>
- 
-
-
-
-
+    
 
 </div>
       <footer id="footer">
@@ -297,10 +243,10 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
 		isTag: false,
-		isCategory: false,
+		isCategory: true,
 		open_in_new: false
 	}
 </script>
